@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description: "Portfolio App",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -43,7 +43,9 @@ export default async function RootLayout({
             <Navbar />
             <MobileMenu />
             <MobileBottomNav />
-            <main>{children}</main>
+            <main className="px-6 md:px-12 pt-30 max-w-7xl mx-auto">
+              {children}
+            </main>
             <Footer />
             <BackToTopButton />
           </ThemeProvider>

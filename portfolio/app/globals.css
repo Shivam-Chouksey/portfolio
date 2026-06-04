@@ -101,28 +101,6 @@ body {
   --hljs-property: #005cc5;
 }
 
-.dark {
-  --hljs-keyword: #ff7b72;
-  --hljs-string: #a5d6ff;
-  --hljs-comment: #8b949e;
-  --hljs-number: #79c0ff;
-  --hljs-literal: #79c0ff;
-  --hljs-function: #d2a8ff;
-  --hljs-title: #d2a8ff;
-  --hljs-built_in: #ffa657;
-  --hljs-attr: #79c0ff;
-  --hljs-tag: #7ee787;
-  --hljs-name: #7ee787;
-  --hljs-operator: #ff7b72;
-  --hljs-variable: #ffa657;
-  --hljs-type: #d2a8ff;
-  --hljs-meta: #8b949e;
-  --hljs-selector: #d2a8ff;
-  --hljs-punctuation: #c9d1d9;
-  --hljs-params: #c9d1d9;
-  --hljs-property: #79c0ff;
-}
-
 .evening {
   --hljs-keyword: #fb923c;
   --hljs-string: #86efac;
@@ -235,12 +213,12 @@ body {
 
 @layer utilities {
   .section-label {
-    @apply text-[11px] font-bold uppercase tracking-[0.15em];
+    @apply text-[11px] uppercase tracking-[0.15em];
     color: var(--color-text-secondary);
   }
 
   .display-title {
-    @apply font-extrabold leading-[0.95] tracking-[-0.04em] uppercase;
+    @apply font-bold leading-[0.95] tracking-[-0.04em] uppercase;
     font-size: clamp(44px, 10vw, 90px);
     overflow-wrap: anywhere;
     word-break: break-word;

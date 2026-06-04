@@ -46,11 +46,6 @@ export const portfolioData = {
         headline:
             'Over the last 2 years, I have worked on frontend applications with a strong focus on scalable UI architecture, real-time dashboards, interactive charts, and seamless user experience using React.js, Next.js and Angular.',
         focusAreas: ['Web Development', 'Frontend Engineering'],
-        emailLabel: 'Say hello',
-        email: 'shivamaashachouksey@gmail.com',
-        linkedinLabel: 'LinkedIn',
-        linkedinCtaLabel: 'Explore LinkedIn',
-        linkedinHref: 'www.linkedin.com/in/shivam-21-chouskey/',
         paragraphs: [
             'Frontend Developer with 2+ years of experience building scalable web applications, real-time dashboards, and interactive user interfaces using Angular, React, and Next.js. Strong expertise in TypeScript, state management, API integration, and performance optimization.',
             'Experienced in developing data-driven platforms with live updates, AG Grid, WebSockets, and analytical charting solutions. I focus on building clean, reusable, and maintainable frontend architectures that deliver seamless user experiences.',
