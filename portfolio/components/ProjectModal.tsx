@@ -73,14 +73,13 @@ export default function ProjectModal() {
                                 </div>
 
                                 <div className="flex flex-col gap-4">
-                                    <h4 className="section-label text-[9px]">{selectedProject.des}</h4>
+                                    <h4 className="section-label text-[9px]">{selectedProject.desc}</h4>
                                     <p className="text-xl font-light leading-relaxed opacity-80">
                                         {selectedProject.longDesc}
                                     </p>
                                 </div>
 
                                 <div className="flex flex-col gap-4">
-                                    <h4 className="section-label text-[9px]">{selectedProject.tech}</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {selectedProject.tech.map((t) => (
                                             <span

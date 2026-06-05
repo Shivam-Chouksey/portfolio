@@ -64,7 +64,7 @@ export default function Projects({ projects }: Props) {
                                             {project.title}
                                             <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                                         </h3>
-                                        <p className="opacity-60 leading-relaxed max-w-sm text-sm">{project.des}</p>
+                                        <p className="opacity-60 leading-relaxed max-w-sm text-sm">{project.desc}</p>
                                     </div>
                                     <span className="font-mono text-[10px] opacity-40">{project.year}</span>
                                 </div>
