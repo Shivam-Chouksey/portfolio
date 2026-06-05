@@ -6,18 +6,25 @@ import Contact from "@/components/Contact";
 import Capabilities from "@/components/Capabilities";
 import { portfolioData } from "@/data/info";
 import { About } from "@/components/About";
+import ProjectProvider from "@/providers/ProjectProvider";
+import ProjectModal from "@/components/ProjectModal";
 
 export default function Home() {
 
   return (
     <>
-      <Hero hero={portfolioData.hero} />
-      <About about={portfolioData.aboutProfile} />
-      <Experience experience={portfolioData.experience} />
-      <Skills />
-      <Projects />
-      <Capabilities />
-      <Contact />
+      <ProjectProvider>
+
+        <ProjectModal />
+
+        <Hero hero={portfolioData.hero} />
+        <About about={portfolioData.aboutProfile} />
+        <Experience experience={portfolioData.experience} />
+        <Projects projects={portfolioData.projects} />
+        <Skills />
+        <Capabilities />
+        <Contact />
+      </ProjectProvider>
     </>
   )
 }
