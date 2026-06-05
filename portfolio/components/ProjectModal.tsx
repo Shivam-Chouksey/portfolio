@@ -34,14 +34,14 @@ export default function ProjectModal() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setSelectedProject(null)}
-                        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] cursor-pointer"
+                        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] cursor-pointer "
                     />
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
                         transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-                        className="fixed top-24 bottom-24 md:inset-x-auto md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-3xl bg-[var(--color-bg)] z-[101] overflow-y-auto border border-theme shadow-2xl"
+                        className="fixed top-24 bottom-24 md:inset-x-auto left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-3xl bg-[var(--color-bg)] z-[101] overflow-y-auto border border-theme shadow-2xl"
                     >
                         <div className="flex flex-col">
                             <div className="relative aspect-video bg-card-theme border-b border-theme flex items-center justify-center overflow-hidden">
