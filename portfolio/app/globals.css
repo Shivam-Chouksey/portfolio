@@ -17,18 +17,41 @@
   --color-selection-text: #ffffff;
   --color-accent: #2563eb;
 
+  --hljs-bg: var(--color-card-bg);
+  --hljs-fg: var(--color-text);
+  --hljs-keyword: #d73a49;
+  --hljs-string: #032f62;
+  --hljs-comment: #6a737d;
+  --hljs-number: #005cc5;
+  --hljs-literal: #005cc5;
+  --hljs-function: #6f42c1;
+  --hljs-title: #6f42c1;
+  --hljs-built_in: #e36209;
+  --hljs-attr: #005cc5;
+  --hljs-tag: #22863a;
+  --hljs-name: #22863a;
+  --hljs-operator: #d73a49;
+  --hljs-variable: #e36209;
+  --hljs-type: #6f42c1;
+  --hljs-meta: #6a737d;
+  --hljs-selector: #6f42c1;
+  --hljs-punctuation: #24292e;
+  --hljs-params: #24292e;
+  --hljs-property: #005cc5;
+
   --animate-fade-in: fade-in 0.8s ease-out;
 
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
+}
 
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -74,31 +97,6 @@ body {
   @apply font-sans antialiased selection:bg-[var(--color-selection-bg)] selection:text-[var(--color-selection-text)];
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-/* ── Highlight.js token colours (light theme default) ── */
-:root {
-  --hljs-bg: var(--color-card-bg);
-  --hljs-fg: var(--color-text);
-  --hljs-keyword: #d73a49;
-  --hljs-string: #032f62;
-  --hljs-comment: #6a737d;
-  --hljs-number: #005cc5;
-  --hljs-literal: #005cc5;
-  --hljs-function: #6f42c1;
-  --hljs-title: #6f42c1;
-  --hljs-built_in: #e36209;
-  --hljs-attr: #005cc5;
-  --hljs-tag: #22863a;
-  --hljs-name: #22863a;
-  --hljs-operator: #d73a49;
-  --hljs-variable: #e36209;
-  --hljs-type: #6f42c1;
-  --hljs-meta: #6a737d;
-  --hljs-selector: #6f42c1;
-  --hljs-punctuation: #24292e;
-  --hljs-params: #24292e;
-  --hljs-property: #005cc5;
 }
 
 .evening {
@@ -211,11 +209,13 @@ body {
   font-weight: bold;
 }
 
+
+.section-label {
+  color: #666666;
+}
+
+
 @layer utilities {
-  .section-label {
-    @apply text-[11px] uppercase tracking-[0.15em];
-    color: var(--color-text-secondary);
-  }
 
   .display-title {
     @apply font-bold leading-[0.95] tracking-[-0.04em] uppercase;

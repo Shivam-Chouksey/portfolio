@@ -18,7 +18,7 @@ export default function Experience({ experience }: Props) {
     return (
         <section id="experience" className="mb-24">
             <div className="flex flex-col gap-24">
-                <h2 className="section-label">Experience</h2>
+                <h2 className="section-label">EXPERIENCE</h2>
                 <div className="flex flex-col gap-18">
                     {experience.map((job, i) => {
                         return (

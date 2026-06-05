@@ -30,14 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-
-  // const locale = await getLocale();
-  // const messages = await getMessages();
-
   return (
     <html lang='en' className={`${geistSans.variable} ${geistMono.variable} `}>
       <body className="h-full flex flex-col min-h-screen hero-pattern transition-colors duration-300 pb-[4.75rem] md:pb-0 antialiased">
-        {/* <NextIntlClientProvider messages={messages}> */}
         <MenuProvider>
           <ThemeProvider>
             <Navbar />
@@ -50,7 +45,6 @@ export default function RootLayout({
             <BackToTopButton />
           </ThemeProvider>
         </MenuProvider>
-        {/* </NextIntlClientProvider> */}
       </body>
     </html>
   );

@@ -1,6 +1,5 @@
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Capabilities from "@/components/Capabilities";
@@ -14,16 +13,13 @@ export default function Home() {
   return (
     <>
       <ProjectProvider>
-
         <ProjectModal />
-
         <Hero hero={portfolioData.hero} />
         <About about={portfolioData.aboutProfile} />
         <Experience experience={portfolioData.experience} />
         <Projects projects={portfolioData.projects} />
-        <Skills />
-        <Capabilities />
-        <Contact />
+        <Capabilities capabilities={portfolioData.capabilities} />
+        <Contact email={portfolioData.contact.email} links={portfolioData.contact.links} />
       </ProjectProvider>
     </>
   )

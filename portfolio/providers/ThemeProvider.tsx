@@ -2,14 +2,14 @@
 
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from 'react';
 
-type Theme = 'light' | 'evening' | 'dark';
+type Theme = 'light' | 'evening';
 
 const THEME_STORAGE_KEY = 'portfolio-theme';
 
 function readStoredTheme(): Theme {
     try {
         const raw = localStorage.getItem(THEME_STORAGE_KEY);
-        if (raw === 'light' || raw === 'evening' || raw === 'dark') return raw;
+        if (raw === 'light' || raw === 'evening') return raw;
     } catch { }
     return 'light';
 }

@@ -25,7 +25,7 @@ export default function Projects({ projects }: Props) {
                 className="flex flex-col gap-16"
             >
                 <div className="flex justify-between items-baseline">
-                    <h2 className="section-label">Projects</h2>
+                    <h2 className="section-label">PROJECTS</h2>
                     <span className="font-mono text-[10px] opacity-40">TOTAL / 02</span>
                 </div>
 

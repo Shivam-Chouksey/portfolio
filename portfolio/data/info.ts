@@ -32,7 +32,7 @@ export const portfolioData = {
     },
     hero: {
         titleLines: ['SHIVAM', 'CHOUKSEY'],
-        whoAmILabel: 'Who am I',
+        whoAmILabel: 'WHO AM I',
         intro:
             `Frontend Focused Software Enginner with 2 years of experience building scalable and responsive web applications
        using React.js, Next,js, Angular, and TypeScript. Skilled in performance optimization, reusable component architecture, REST API integration, real-time applications, CSR, and state management. Experienced in developing
@@ -42,7 +42,7 @@ export const portfolioData = {
         scrollCtaHref: '#experience',
     },
     aboutProfile: {
-        sectionLabel: 'About / Profile',
+        sectionLabel: 'ABOUT / PROFILE',
         headline:
             'Over the last 2 years, I have worked on frontend applications with a strong focus on scalable UI architecture, real-time dashboards, interactive charts, and seamless user experience using React.js, Next.js and Angular.',
         focusAreas: ['Web Development', 'Frontend Engineering'],
@@ -54,10 +54,11 @@ export const portfolioData = {
         ],
     },
     contact: {
-        sectionLabel: 'Connect',
+        sectionLabel: 'CONNECT',
         email: 'shivamaashachouksey@gmail.com',
         links: [
-            { label: 'LinkedIn', href: 'www.linkedin.com/in/shivam-21-chouskey' },
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/shivam-21-chouskey/' },
+            { label: 'GitHub', href: 'https://github.com/Shivam-Chouksey' }
         ],
     },
     footer: {
@@ -114,7 +115,6 @@ export const portfolioData = {
             items: [
                 'Node.js',
                 'Express',
-                'Django rest framework',
             ]
         }
     ] satisfies Capability[],
