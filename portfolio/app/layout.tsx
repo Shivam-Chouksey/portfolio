@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
-import MobileBottomNav from "@/components/Layout/MobileBottomNav";
 import BackToTopButton from "@/components/Layout/BackToTopButton";
 import MobileMenu from "@/components/Layout/MobileMenu";
 import MenuProvider from "@/providers/MenuProvider";
@@ -37,7 +36,6 @@ export default function RootLayout({
           <ThemeProvider>
             <Navbar />
             <MobileMenu />
-            <MobileBottomNav />
             <main className="px-6 md:px-12 pt-30 max-w-7xl mx-auto">
               {children}
             </main>

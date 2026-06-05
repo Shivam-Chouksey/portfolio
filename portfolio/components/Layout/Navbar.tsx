@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { AnimatePresence, motion } from 'motion/react';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Link from "next/link";
-import Image from "next/image";
 
 import { useTheme } from "@/providers/ThemeProvider";
 import { portfolioData } from "@/data/info";
@@ -17,14 +16,6 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
     const { theme, onToggleTheme } = useTheme();
     const { isMenuOpen, setIsMenuOpen } = useMenu()
-    const [isLangOpen, setIsLangOpen] = useState(false);
-    const [currentLang, setCurrentLang] = useState(() => {
-        const stored = localStorage.getItem('lang');
-        if (stored) return stored;
-        return portfolioData.languages[0]?.code ?? 'EN';
-    });
-
-    const pageNavItems = new Set(['Blog']);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -67,23 +58,15 @@ export default function Navbar() {
                 <div className="flex items-center gap-8">
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="hidden md:flex gap-8">
                         {portfolioData.navItems.map((item) =>
-                            pageNavItems.has(item) ? (
-                                <Link
-                                    key={item}
-                                    href={`/${item.toLowerCase()}`}
-                                    className="section-label hover:text-[var(--color-text)] transition-colors"
-                                >
-                                    {item}
-                                </Link>
-                            ) : (
-                                <Link
-                                    key={item}
-                                    href={`/#${item.toLowerCase()}`}
-                                    className="section-label hover:text-[var(--color-text)] transition-colors"
-                                >
-                                    {item}
-                                </Link>
-                            )
+                        (
+                            <Link
+                                key={item}
+                                href={`/#${item.toLowerCase()}`}
+                                className="section-label hover:text-[var(--color-text)] transition-colors"
+                            >
+                                {item.toUpperCase()}
+                            </Link>
+                        )
                         )}
                     </motion.div>
 
