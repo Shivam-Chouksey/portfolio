@@ -3,7 +3,6 @@
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { projectImageKeys, projectImages } from '../assets/images';
-import { useProject } from '@/providers/ProjectProvider';
 import Image from 'next/image';
 import { PersonalProject } from '@/data/info';
 
@@ -12,8 +11,6 @@ type Props = {
 };
 
 export default function PersonalProjects({ projects }: Props) {
-
-    const { setSelectedProject } = useProject();
 
     return (
         <section id="personal projects" className="mb-24">
@@ -35,7 +32,7 @@ export default function PersonalProjects({ projects }: Props) {
                             <motion.div
                                 key={i}
                                 whileHover={{ y: -5 }}
-                                onClick={() => setSelectedProject(project)}
+                                onClick={() => window.open(project?.website, "_blank")}
                                 className="flex flex-col gap-6 cursor-pointer group"
                             >
                                 <div className="relative aspect-[4/3] bg-card-theme flex items-center justify-center border border-theme overflow-hidden">
@@ -50,7 +47,7 @@ export default function PersonalProjects({ projects }: Props) {
                                                 }
                                                 alt={project.title}
                                                 fill
-                                                className="absolute inset-0 w-full h-full object-cover transition-opacity"
+                                                className="absolute inset-0 w-full h-full transition-opacity"
                                                 loading="lazy"
                                             />
                                         )}

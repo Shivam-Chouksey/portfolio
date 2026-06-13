@@ -22,6 +22,7 @@ export interface PersonalProject {
     image: string;
     year?: string
     longDesc?: string;
+    website?: string
 }
 
 export type ExperienceItem = {
@@ -102,19 +103,21 @@ export const portfolioData = {
     personalProjects: [
         {
             title: 'Agricultural Enterprise Resource Planning',
-            desc: 'Personal and operational expense management for complex agricultural activities.',
+            longDesc: '',
             tech: ['NextJS', 'REST APIs'],
             image: 'ERP',
-            longDesc:
+            desc:
                 'A comprehensive management platform that helps users track household and agricultural expenses while managing contacts, contracts, Assets, Revenue and crop information in one centralized system..',
+            website: 'https://expense-tracker-shivam.vercel.app/'
         },
         {
             title: 'DineFlow',
-            desc: 'Complete Restaurant Management Solution.',
+            longDesc: '',
             tech: ['NextJS', 'REST APIs'],
             image: 'DineFlow',
-            longDesc:
+            desc:
                 'Restaurant management application that enables customers to browse menus and book tables, while providing administrators with tools to manage tables, staff, attendants, bookings, and menu items efficiently.',
+            website: 'https://dineflow24.vercel.app/login'
         },
 
     ] satisfies PersonalProject[],

@@ -50,7 +50,7 @@ export default function Projects({ projects }: Props) {
                                                 }
                                                 alt={project.title}
                                                 fill
-                                                className="absolute inset-0 w-full h-full object-cover transition-opacity"
+                                                className="absolute inset-0 w-full h-full transition-opacity"
                                                 loading="lazy"
                                             />
                                         )}
