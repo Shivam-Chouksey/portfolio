@@ -20,6 +20,7 @@ export interface PersonalProject {
     desc: string;
     tech: string[];
     image: string;
+    year?: string
     longDesc?: string;
 }
 

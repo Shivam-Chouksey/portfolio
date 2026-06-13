@@ -69,7 +69,7 @@ export default function ProjectModal() {
                                     <h2 className="text-4xl font-extrabold tracking-tight uppercase italic">
                                         {selectedProject.title}
                                     </h2>
-                                    <span className="font-mono text-xs opacity-40">{selectedProject.year}</span>
+                                    <span className="font-mono text-xs opacity-40">{selectedProject?.year}</span>
                                 </div>
 
                                 <div className="flex flex-col gap-4">
