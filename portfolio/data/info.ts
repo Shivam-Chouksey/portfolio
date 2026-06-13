@@ -15,6 +15,14 @@ export interface Project {
     longDesc?: string;
 }
 
+export interface PersonalProject {
+    title: string;
+    desc: string;
+    tech: string[];
+    image: string;
+    longDesc?: string;
+}
+
 export type ExperienceItem = {
     company: string;
     tagline: string;
@@ -68,7 +76,7 @@ export const portfolioData = {
     languages: [
         { code: 'EN', flag: 'US', label: 'English' },
     ] satisfies Language[],
-    navItems: ['About', 'Capabilities', 'Experience', 'Projects', 'Contact'] satisfies string[],
+    navItems: ['About', 'Capabilities', 'Experience', 'Projects', 'Personal projects', 'Contact'] satisfies string[],
     projects: [
         {
             title: 'Farmdesk',
@@ -90,6 +98,25 @@ export const portfolioData = {
         },
 
     ] satisfies Project[],
+    personalProjects: [
+        {
+            title: 'Agricultural Enterprise Resource Planning',
+            desc: 'Personal and operational expense management for complex agricultural activities.',
+            tech: ['NextJS', 'REST APIs'],
+            image: 'ERP',
+            longDesc:
+                'A comprehensive management platform that helps users track household and agricultural expenses while managing contacts, contracts, Assets, Revenue and crop information in one centralized system..',
+        },
+        {
+            title: 'DineFlow',
+            desc: 'Complete Restaurant Management Solution.',
+            tech: ['NextJS', 'REST APIs'],
+            image: 'DineFlow',
+            longDesc:
+                'Restaurant management application that enables customers to browse menus and book tables, while providing administrators with tools to manage tables, staff, attendants, bookings, and menu items efficiently.',
+        },
+
+    ] satisfies PersonalProject[],
     capabilities: [
         {
             category: 'Frontend & Database',

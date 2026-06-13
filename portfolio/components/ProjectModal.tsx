@@ -44,12 +44,12 @@ export default function ProjectModal() {
                         className="fixed top-24 bottom-24 md:inset-x-auto left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-3xl bg-[var(--color-bg)] z-[101] overflow-y-auto border border-theme shadow-2xl"
                     >
                         <div className="flex flex-col">
-                            <div className="relative aspect-video bg-card-theme border-b border-theme flex items-center justify-center overflow-hidden">
+                            <div className="relative aspect-video bg-card-theme border-b border-theme flex items-center justify-center ">
                                 {projectImageSrc && (
                                     <Image
                                         src={projectImageSrc}
                                         alt={selectedProject.title}
-                                        className="absolute inset-0 w-full h-full object-cover"
+                                        className="absolute inset-0 w-full h-full"
                                         loading="lazy"
                                         decoding="async"
                                     />
